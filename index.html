@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+    <div class = "container">
+        <div class = "header">
+            <h1>Shopping List</h1>
+        </div>
+    </div>
+    <div class = "new-container">
+        <div class = "button-container">
+            <div id = "add">
+                <button id = "add-button" onclick="addData()">
+                    <span style="font-size: 18px; vertical-align: middle;">+</span> Add
+                </button>
+            </div>
+            <div id = "update">
+                <button id = "update-button" onclick="toggleUpdateButton(), toggleDeleteButton()">
+                    <span style="font-size: 14px;">✎</span> Edit
+                </button>
+            </div>
+            <!-- <div id = "remove">
+                <button id="remove-button" onclick="toggleDeleteButton()">
+                    <span style="font-size: 15px;">🗑</span> Remove
+                </button>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="list-container">
+        <div class="list">
+            <ul id="list">
+                <li>Hello
+                        <button class="specificDeleteButton right-button">Delete</button>
+                        <button class="specificUpdateButton right-update-button" onclick="updateData()">Update</button>
+                </li>
+                <li>Hello
+                        <button class="specificDeleteButton right-button">Delete</button>
+                        <button class="specificUpdateButton right-update-button" onclick="updateData()">Update</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
